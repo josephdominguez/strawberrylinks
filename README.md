@@ -29,7 +29,7 @@ To use the StrawberryLinks application, you can visit https://www.strawberrylink
 
 - Frontend: HTML, CSS, Vanilla JavaScript
 - Backend: Node.js, Express
-- Database: MongoDB
+- Database: PostgreSQL
 
 ## Contributing
 
