@@ -34,7 +34,7 @@ export const hideModalOnClick = (event, modal, closeModal) => {
 };
 
 /**
- * Switchs from one modal to another by hiding the first and showing the second.
+ * Switches from one modal to another by hiding the first and showing the second.
  *
  * @param {HTMLElement} modalA - The first modal to hide.
  * @param {HTMLElement} modalB - The second modal to show.
