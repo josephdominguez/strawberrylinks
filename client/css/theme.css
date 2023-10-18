@@ -9,6 +9,7 @@
     --light-gray: rgb(230, 230, 230);
     --dark-gray: rgb(50, 50, 50);
     --gray: rgb(175, 175, 175);
+    --transparent-black: rgba(0, 0, 0, 0.5);
     --strawberry: rgb(255, 105, 105);
     --light-strawberry: rgb(255, 150, 150);
     --purple: rgb(160, 125, 210);
