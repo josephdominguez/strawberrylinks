@@ -1,6 +1,6 @@
 # StrawberryLinks
 
-![Screenshot](https://i.imgur.com/l1sGd1x.jpg)
+![Screenshot](https://i.imgur.com/Rkwgg2S.jpg)
 
 StrawberryLinks is a easy-to-use URL shortener service that allows users to create 
 shortened versions of long URLs. This applications helps to make long and unruly URLS 
