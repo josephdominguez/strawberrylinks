@@ -1,0 +1,99 @@
+@import 'theme.css';
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: var(--oatmeal);
+}
+
+main {
+    flex-grow: 1;
+}
+
+/* Header Styles */
+.header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.strawberry-logo {
+    width: 32px;
+    height: 32px;
+}
+
+.login-icon {
+    cursor: pointer;
+    margin-left: auto;
+    position: relative;
+    float: right;
+    right: 30px;
+}
+
+/* Link form styles */
+.link-form-container {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.link-form-container input[type="url"] {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid var(--gray);
+    border-radius: 4px;
+}
+
+/* Link container styles  */
+.link-container {
+    background-color: var(--off-white);
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid var(--gray);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.link-container h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.link-container a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--toasted-oatmeal);
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.25);
+    color: white;
+    padding: 10px 10px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: end;
+}
+
+.footer-container a {
+    font-weight: 600;
+}
+
+.github-logo {
+    display: inline-block;
+    vertical-align: middle;
+    width: 24px;
+    height: auto;
+}
