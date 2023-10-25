@@ -1,83 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Strawberry Links</title>
-  <link rel="icon" href="favicon.ico">
-  <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="css/modals/modal.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
-</head>
-  
-<body>
-  <header>
-    <div class="header-container">
-      <div class="title">
-        <img class="strawberry-logo" src="images/strawberry-left.png">
-        <h1><a href="/client/index.html">strawberrylinks.com</a></h1>
-        <img class="strawberry-logo" src="images/strawberry-right.png">
-      </div>
-      <div class="login-icon">
-        <i class="fa fa-user" id="login-icon"></i>
-      </div>      
-    </div>
-  </header>
-
-  <main>
-      <form class="link-form-container" id="shorten-link-form" action="https://express-api.com/shorten" method="POST">
-        <label for="original-link">Enter the link to shorten:</label>
-        <input type="url" id="original-link" name="original-link" required>
-        <button type="submit">Shorten</button>
-      </form>
-
-      <div class="link-container">
-        <h3>Your shortened link:</h3>
-        <a href="your-generated-link-url" target="_blank">your-generated-link-url</a>
-      </div>
-  </main>
-
-  <footer>
-    <div class="footer-container">
-      <div>
-        Made by <img class="github-logo" src="images/github.svg"> <a href="https://github.com/josephdominguez">Joseph Dominguez-Virla</a>
-      </div>
-    </div>
-  </footer>
-
-  <div class="modal hidden" id="login-modal">
-    <div class="modal-content">
-      <span class="close-modal" id="close-login-modal">&times;</span>
-      <h2>Login</h2>
-
-      <form class="login-form" action="/login" method="POST">
-        <label for="email">Email:</label>
-        <input type="text" id="email" name="email" required>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        <button class="submit-button" type="submit">Login</button>
-      </form>
-      <button class="create-account-button" id="switch-to-create-account">Create Account</button>
-    </div>
-    <script type="module" src="scripts/modals/login.js" defer></script>
-  </div>
-
-  <div class="modal hidden" id="create-account-modal">
-    <div class="modal-content">
-      <span class="close-modal" id="close-create-account-modal">&times;</span>
-      <h2>Create Account</h2>
-
-      <form class="create-account-form" action="/create-account" method="POST">
-        <label for="email">Email:</label>
-        <input type="text" id="create-email" name="create-email" required>
-        <label for="password">Password:</label>
-        <input type="password" id="create-password" name="create-password" required>
-        <button class="submit-button" type="submit">Create Account</button>
-      </form>
-      <button class="switch-to-login-button" id="switch-to-login">Back</button>
-      <script type="module" src="scripts/modals/create_account.js" defer></script>
-    </div>
-</body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
