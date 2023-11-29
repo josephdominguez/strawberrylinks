@@ -27,7 +27,7 @@ To use the StrawberryLinks application, you can visit https://www.strawberrylink
 
 ## Technologies Used
 
-- Frontend: HTML, CSS, Vanilla JavaScript
+- Frontend: Vue.js
 - Backend: Node.js, Express
 - Database: PostgreSQL
 
