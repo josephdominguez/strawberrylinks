@@ -2,10 +2,6 @@
 import Header from '@/components/Header.vue';
 import LinkShortener from '@/components/LinkShortener.vue';
 import Footer from '@/components/Footer.vue';
-
-const onMounted = () => {
-  console.log('HomeView mounted');  // Add this line
-};
 </script>
 
 <template>
