@@ -17,11 +17,6 @@ const copyToClipboard = () => {
 
 <style scoped>
 .copy-button {
-  background-color: var(--primary-color);
-  color: #fff;
-  border: none;
   padding: 8px;
-  cursor: pointer;
-  border-radius: 4px;
 }
 </style>
