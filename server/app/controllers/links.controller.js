@@ -17,7 +17,7 @@ exports.getOriginalLink = async (req, res) => {
     
     // Redirects user to original link if it exists and increments number of clicks.
     if (originalLink) {
-        res.redirect(originalLink); 
+        res.json({ originalLink }); 
         await linksModel.incrementClickCount(shortLink);
     } 
     else { res.status(404).json({ error: 'Shortened link not found' }); }

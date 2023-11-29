@@ -1,9 +1,15 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import CopyButton from '@/components/CopyButton.vue';
+const { shortenedLink } = defineProps(['shortenedLink']);
+</script>
 
 <template>
   <div class="link-container">
     <h3>Your shortened link:</h3>
-    <a href="your-generated-link-url" target="_blank">your-generated-link-url</a>
+    <div class="shortened-link-container">
+      <a :href="shortenedLink" target="_blank">{{ shortenedLink }}</a>
+      <CopyButton :shortenedLink="shortenedLink" />
+    </div>
   </div>
 </template>
 
@@ -25,5 +31,12 @@
 
 .link-container a:hover {
   text-decoration: underline;
+}
+
+.shortened-link-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 </style>
