@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import axios from 'axios';
+import { API_ENDPOINT } from '@/config';
 
 const { updateShortenedLink } = defineProps(['updateShortenedLink']);
 
@@ -9,7 +10,8 @@ const shortenedLink = ref('');
 
 const shortenLink = async () => {
   try {
-    const response = await axios.post(`http://localhost:8080/shorten?originalLink=${originalLink.value}`);
+    // Make API call to shorten link
+    const response = await axios.post(`${API_ENDPOINT}/shorten?originalLink=${originalLink.value}`);
     shortenedLink.value = response.data.shortLink;
 
     // Call the prop function to update the shortened link in the parent component
