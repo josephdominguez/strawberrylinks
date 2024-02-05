@@ -1,5 +1,4 @@
 const express = require('express');
-const expressValidator = require('express-validator');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
