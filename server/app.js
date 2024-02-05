@@ -27,12 +27,6 @@ app.get('/', (req, res) => {
     res.json({ message: 'Server is running.' });
 });
 
-// Error handler middleware
-app.use((err, req, res, next) => {
-    console.error(err.stack);
-    res.status(500).send('Something went wrong!');
-});
-
 // Starts server.
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}.`);
