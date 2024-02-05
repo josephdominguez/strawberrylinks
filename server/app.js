@@ -34,6 +34,11 @@ app.use((err, req, res, next) => {
     res.status(500).send('Something went wrong!');
 });
 
+// Print a message every 5 seconds
+setInterval(() => {
+    console.log('Server is still running.');
+}, 5000);
+
 // Starts server.
 const server = app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}.`);
