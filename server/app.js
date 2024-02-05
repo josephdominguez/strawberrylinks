@@ -25,7 +25,13 @@ require('./app/routes/links.routes.js')(app);
 
 // Creates default route.
 app.get('/', (req, res) => {
-    res.json({message: 'Server is running.'});
+    res.json({ message: 'Server is running.' });
+});
+
+// Error handler middleware
+app.use((err, req, res, next) => {
+    console.error(err.stack);
+    res.status(500).send('Something went wrong!');
 });
 
 // Starts server.
