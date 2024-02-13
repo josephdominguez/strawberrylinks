@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import CopyButton from '@/components/CopyButton.vue';
-import { API_ENDPOINT } from '@/config';
+import { REDIRECT_ENDPOINT } from '@/config';
 const { shortenedLink } = defineProps(['shortenedLink']);
 </script>
 
@@ -8,7 +8,7 @@ const { shortenedLink } = defineProps(['shortenedLink']);
   <div class="link-container">
     <h3>Your shortened link:</h3>
     <div v-if="shortenedLink" class="shortened-link-container">
-      <a :href="shortenedLink" target="_blank">{{ API_ENDPOINT }}/{{ shortenedLink }}</a>
+      <a :href="shortenedLink" target="_blank">{{ REDIRECT_ENDPOINT }}/{{ shortenedLink }}</a>
       <CopyButton :shortenedLink="shortenedLink" />
     </div>
     <div v-else><br /></div>
