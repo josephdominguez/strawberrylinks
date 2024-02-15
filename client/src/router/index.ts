@@ -1,6 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import HomeView from '../views/HomeView.vue';
-import ShortenedUrlView from '../views/ShortenedUrlView.vue';
+import { authGuard } from '@auth0/auth0-vue';
+
+import ShortenView from '@/views/ShortenView.vue';
+import ElongateView from '@/views/ElongateView.vue';
+import DashboardView from '@/views/DashboardView.vue';
+import CallbackViewVue from '@/views/CallbackView.vue';
+import ShortenedUrlView from '@/views/ShortenedUrlView.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -8,7 +13,23 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView
+      component: ShortenView,
+    },
+    {
+      path: '/elongate',
+      name: 'elongate',
+      component: ElongateView,
+    },
+    {
+      path: '/dashboard',
+      name: 'dashboard',
+      component: DashboardView,
+      beforeEnter: authGuard,
+    },
+    {
+      path: '/callback',
+      name: 'callback',
+      component: CallbackViewVue,
     },
     {
       path: '/:shortUrl',
