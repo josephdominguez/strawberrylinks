@@ -1,9 +1,3 @@
-<template>
-  <div>
-    <!-- Add loading or error handling if needed -->
-  </div>
-</template>
-
 <script setup lang="ts">
 import { onMounted } from 'vue';
 import { useRoute } from 'vue-router';
@@ -22,9 +16,13 @@ onMounted(async () => {
     // Redirect the user to the original link
     window.location.href = originalLink;
   } catch (error) {
-    // Handle error (e.g., show 404 page)
-    console.error('Error fetching original link:', error);
     // Redirect to 404 page or display an error message
+    console.error('Error fetching original link:', error);
   }
 });
 </script>
+
+<template>
+  <div>
+  </div>
+</template>
