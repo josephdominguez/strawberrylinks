@@ -1,29 +1,80 @@
-# StrawberryLinks [IN PROGRESS]
+![Screenshot](https://i.imgur.com/2Hwk4I0.png)
 
-![Screenshot](https://i.imgur.com/Rkwgg2S.jpg)
-
-StrawberryLinks is a easy-to-use URL shortener service that allows users to create 
-shortened versions of long URLs. This applications helps to make long and unruly URLS 
-more manageable and easier to share.
+[StrawberryLinks](https://www.strawberrylinks.com/) is an easy-to-use URL shortener service that allows users to create 
+shortened versions of long URLs. This application helps to make long and unruly URLS 
+more manageable and easier to share. 
 
 ## Features
 
 - URL Shortening: Easily create shortened versions of long URLs.
 - Custom Short Links: Registered users can customize the shortened URL to make it more memorable.
+- Manage Short URLs: Access the account dashboard to view, edit, or delete created short URLs.
 - Performance Tracking: Monitor the performance and engagement of your short URLs.
-- User-Friendly Interface: A simple and intuitive interface for creating and managing shortened URLs.
-- Secure and Reliable: StrawberryLinks ensures the security and reliability of the shortened URLs.
 
 ## Getting Started
 
-To use the StrawberryLinks application, you can visit https://www.strawberrylinks.com/.
+![Screenshot](https://i.imgur.com/i24CaRK.png)
 
-## Usage
+You can visit https://www.strawberrylinks.com/ for a live deployment of the application.
 
-1. Create Shortened URLs: Paste the long URL into the provided input field and generate a shortened version.
-2. Copy and Share: Once generated, users can copy the shortened URL and share it with others.
-3. Register/Login: Users can register for an account or log in with their existing credentials. (TO-DO)
-4. Manage Short URLs: Users can view, edit, or delete their created short URLs from their account dashboard. (TO-DO)
+To run the application locally, you can use the following steps:
+
+## Installation and Execution
+
+1. Clone the repository locally for copy of source code.
+
+`$ git clone https://github.com/josephdominguez/strawberrylinks`
+
+This repository is a monorepo where the frontend is located in the `client` directory and the backend is 
+located in the `server` directory.
+
+2. Ensure you have Node.js and npm installed on your system. Install the project dependencies for both frontend and backend separately.
+
+#### Frontend
+
+```bash
+cd client
+npm install
+```
+
+#### Backend
+
+```bash
+cd server
+npm install
+```
+
+3. To run the application for development, you can use the following commands:
+
+#### Frontend
+
+```bash
+cd client
+npm run dev
+```
+
+#### Backend
+
+```bash
+cd server
+npm run dev
+```
+
+4. To build the application for production, you can use the following commands:
+
+#### Frontend
+
+```bash
+cd client
+npm run build
+```
+
+#### Backend
+
+```bash
+cd server
+npm run start
+```
 
 ## Technologies Used
 
