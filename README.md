@@ -13,7 +13,7 @@ more manageable and easier to share.
 
 ## Getting Started
 
-![Screenshot](https://i.imgur.com/i24CaRK.png)
+![Screenshot](https://i.imgur.com/U41XRwa.png)
 
 You can visit https://www.strawberrylinks.com/ for a live deployment of the application.
 
