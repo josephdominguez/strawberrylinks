@@ -1,10 +1,8 @@
 <script setup lang="ts">
-import UserNavMenu from '@/components/auth/UserNavMenu.vue';
 </script>
 
 <template>
   <header>
-    <UserNavMenu />
     <div class="title">
       <img class="strawberry-logo" src="@/assets/strawberry-left.png" />
       <h1><a href="/">strawberrylinks.com</a></h1>
