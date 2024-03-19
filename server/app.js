@@ -2,6 +2,9 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
+// Loads environment variables.
+require('dotenv').config();
+
 // Defines port for Express server.
 const PORT = process.env.PORT || 8080;
 
@@ -16,11 +19,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors(corsOptions));
 
-// Loads environment variables.
-require('dotenv').config();
-
 // Loads routes.
 require('./app/routes/links.routes.js')(app);
+require('./app/routes/users.routes')(app);
 
 // Creates default route.
 app.get('/', (req, res) => {
