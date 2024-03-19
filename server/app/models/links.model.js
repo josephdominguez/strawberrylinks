@@ -6,14 +6,14 @@ const generateShortLink = () => {
 }  
 
 // Creates newly shortened link.
-exports.createShortLink = async (originalLink) => {
+exports.createShortLink = async (originalLink, sub = null) => {
     try {
         // Generates a unique short link.
         const shortLink = generateShortLink();
 
         // Saves the original link and the short link in the database.
-        const query = 'INSERT INTO links (original_link, short_link) VALUES ($1, $2) RETURNING link_id';
-        const values = [originalLink, shortLink];
+        const query = 'INSERT INTO links (original_link, short_link, sub) VALUES ($1, $2, $3) RETURNING link_id';
+        const values = [originalLink, shortLink, sub];
         await db.query(query, values);
 
         return shortLink;

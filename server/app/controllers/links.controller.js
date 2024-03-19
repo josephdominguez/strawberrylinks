@@ -34,7 +34,8 @@ const retrieveOriginalLink = async (req, res, shouldIncrementClick = false) => {
 exports.createShortLink = async (req, res) => {
     try {
         const { originalLink } = req.query;
-        const shortLink = await linksModel.createShortLink(originalLink);
+        const sub = req.user ? req.user.sub : null;
+        const shortLink = await linksModel.createShortLink(originalLink, sub);
         res.json({ shortLink });
     } catch (e) {
         console.error(e);
